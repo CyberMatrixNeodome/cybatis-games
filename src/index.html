@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Cybatis Games — Minigame Network</title>
+  <meta name="description" content="Cybatis Games minigame selection portal." />
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <svg class="brand__logo" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="20,3 35,12 35,28 20,37 5,28 5,12" fill="none" stroke="#35f0e0" stroke-width="2"/>
+        <polygon points="20,11 28,15.5 28,24.5 20,29 12,24.5 12,15.5" fill="none" stroke="#9b5cff" stroke-width="1.6"/>
+        <circle cx="20" cy="20" r="3" fill="#ff4fd8"/>
+      </svg>
+      <div class="brand__text">
+        <span class="brand__title">CYBATIS GAMES</span>
+        <span class="brand__subtitle">MINIGAME NETWORK</span>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <button data-nav="home" aria-current="page">Home</button>
+      <button data-nav="games">Games</button>
+      <button data-nav="leaderboards">Leaderboards</button>
+      <button data-nav="profile">Profile</button>
+      <button data-nav="settings">Settings</button>
+    </nav>
+  </header>
+
+  <main id="app-main">
+    <div id="home-sections">
+      <section class="hero">
+        <p class="hero__eyebrow">CYBATIS SYSTEMS // GAMING DIVISION</p>
+        <h1 class="hero__title">Enter the Minigame Network</h1>
+        <p class="hero__lead">
+          Select a minigame below and launch straight into it —
+          single-player or multiplayer, right from Discord or your browser.
+        </p>
+        <button class="btn-primary" id="play-now-btn">PLAY NOW</button>
+      </section>
+
+      <section class="status-strip hud-panel" aria-label="Network status">
+        <span class="status-strip__title">CYBATIS GAME NETWORK</span>
+        <div class="status-strip__stats">
+          <span class="status-strip__stat" id="status-dot">● ONLINE</span>
+          <span class="status-strip__stat">Active Games: <strong id="status-active">0</strong></span>
+          <span class="status-strip__stat">Players Online: <strong id="status-players">0</strong></span>
+          <span class="status-strip__stat">Games Available: <strong id="status-available">0</strong></span>
+        </div>
+      </section>
+
+      <section class="games-section" id="games-section">
+        <h2 class="games-section__heading">Select a Game</h2>
+        <div class="game-grid" id="game-grid"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    CYBATIS SYSTEMS &mdash; GAMING DIVISION
+  </footer>
+
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>

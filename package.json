@@ -1,0 +1,14 @@
+{
+  "name": "cybatis-games",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cybatis Games — minigame selection portal, deployed as a Cloudflare Worker.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4.20.0"
+  }
+}
